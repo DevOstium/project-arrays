@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArrayModule } from './pages/arrays/array.module';
+import { FlatMapModule } from './pages/flatmap/flatmap.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ArrayModule } from './pages/arrays/array.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ArrayModule
+    ArrayModule,
+    FlatMapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
