@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { FlatMapModule } from './flatmap.module';
+import toastr from "toastr";
+
 
 @Component({
   selector: 'app-flatmap',
@@ -16,9 +18,8 @@ export class FlatmapComponent implements OnInit {
   
   constructor() { }
 
-  ngOnInit() {
-
-
+  ngOnInit(){
+    toastr.success("Solicitação processada com sucesso!");
 
       this.produto.next();
 
